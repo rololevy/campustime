@@ -1,6 +1,6 @@
 # Cómo contribuir
 
-¡Gracias por sumarte! UniTime es un proyecto abierto pensado para que estudiantes de cualquier universidad puedan aportar.
+¡Gracias por sumarte! CampusTime es un proyecto abierto pensado para que estudiantes de cualquier universidad puedan aportar.
 
 ## Flujo de trabajo
 

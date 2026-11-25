@@ -1,12 +1,12 @@
 /**
- * Datos del sitio. El nombre está centralizado acá para poder cambiarlo en un
- * solo lugar si el chequeo de marca lo exige.
+ * Datos del sitio. Todos los textos de la interfaz toman el nombre de acá, así
+ * que cambiarlo es tocar una sola línea.
  *
  * Antes de publicar, completá `dataController` y `contactEmail`: la política de
  * privacidad los muestra y la Ley 25.326 exige identificar al responsable.
  */
 export const siteConfig = {
-  name: "UniTime",
+  name: "CampusTime",
   tagline: "Banco de tiempo universitario",
   description:
     "Enseñá lo que sabés y aprendé lo que te falta. Por cada hora que enseñás ganás un crédito para aprender de otra persona de la comunidad universitaria. Sin dinero de por medio.",
@@ -18,7 +18,7 @@ export const siteConfig = {
   /** Email para consultas y para ejercer los derechos de acceso, rectificación y supresión. */
   contactEmail: "orlando.aguilera@alumnos.frgp.utn.edu.ar",
   /** Repositorio público (AGPL-3.0). */
-  repositoryUrl: "https://github.com/rololevy/unitime",
+  repositoryUrl: "https://github.com/rololevy/campustime",
   /** Versión vigente de la política de privacidad; se guarda con cada consentimiento. */
   privacyPolicyVersion: "2026-11-24",
 } as const;

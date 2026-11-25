@@ -1,5 +1,5 @@
 -- =============================================================================
--- UniTime · Datos de referencia: instituciones, sedes y dominios
+-- CampusTime · Datos de referencia: instituciones, sedes y dominios
 --
 -- Carga inicial para la lista de espera y la acreditación. Los dominios por
 -- sede siguen el patrón oficial de los sitios de cada facultad regional

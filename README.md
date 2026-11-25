@@ -1,4 +1,4 @@
-# UniTime
+# CampusTime
 
 Banco de tiempo para la comunidad universitaria argentina: cada hora que enseñás se convierte en un crédito para aprender de otra persona. Sin dinero de por medio.
 
@@ -67,17 +67,18 @@ Un email se asigna a una institución y a una sede según el **sufijo registrado
 Para correr la imagen Docker:
 
 ```bash
-docker build --build-arg NEXT_PUBLIC_SITE_URL=https://tu-dominio -t unitime .
-docker run -p 3000:3000 -e SUPABASE_URL=... -e SUPABASE_SECRET_KEY=... unitime
+docker build --build-arg NEXT_PUBLIC_SITE_URL=https://tu-dominio -t campustime .
+docker run -p 3000:3000 -e SUPABASE_URL=... -e SUPABASE_SECRET_KEY=... campustime
 ```
 
 ## Antes de publicar
 
-- [ ] Completar `dataController`, `contactEmail` y `repositoryUrl` en [`src/config/site.ts`](src/config/site.ts). La política de privacidad los muestra.
-- [ ] Verificar el nombre: "UniTime" ya es un software open source de horarios universitarios (unitime.org). Buscalo en el INPI antes del lanzamiento público.
-- [ ] Confirmar con cada facultad regional qué dominio usan los emails de estudiantes y ajustar [la migración de referencia](supabase/migrations/20261124120200_reference_institutions.sql).
+- [x] Completar `dataController`, `contactEmail` y `repositoryUrl` en [`src/config/site.ts`](src/config/site.ts). La política de privacidad los muestra.
+- [ ] Registrar la marca "CampusTime" en el INPI (clases 41, 42 y 45). No es obligatorio para lanzar, pero protege el nombre si el proyecto crece.
+- [ ] Confirmar con cada facultad regional qué dominio usan los emails de estudiantes y ajustar [la migración de referencia](supabase/migrations/20261124120200_reference_institutions.sql). FRGP ya está confirmada (`alumnos.frgp.utn.edu.ar`).
 - [ ] Configurar Turnstile en producción.
-- [ ] En GitHub, activar private vulnerability reporting, CodeQL (configuración por defecto), push protection de secret scanning y protección de la rama `main`.
+- [x] En GitHub, activar private vulnerability reporting, CodeQL y push protection de secret scanning.
+- [ ] Proteger la rama `main` para que no se pueda mergear con CI en rojo.
 
 ## Estructura
 

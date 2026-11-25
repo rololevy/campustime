@@ -1,6 +1,6 @@
 # Código de conducta
 
-UniTime existe para que la comunidad universitaria se ayude. Esperamos lo mismo en el repositorio, en los issues y en la plataforma.
+CampusTime existe para que la comunidad universitaria se ayude. Esperamos lo mismo en el repositorio, en los issues y en la plataforma.
 
 ## Lo que esperamos
 

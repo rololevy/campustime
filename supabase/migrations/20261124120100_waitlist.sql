@@ -1,5 +1,5 @@
 -- =============================================================================
--- UniTime · Lista de espera
+-- CampusTime · Lista de espera
 --
 -- Personas interesadas antes del lanzamiento. Sirve para abrir por oleadas y
 -- para sembrar el catálogo con lo que la comunidad quiere enseñar y aprender.
