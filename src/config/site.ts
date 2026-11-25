@@ -10,7 +10,8 @@ export const siteConfig = {
   tagline: "Banco de tiempo universitario",
   description:
     "Enseñá lo que sabés y aprendé lo que te falta. Por cada hora que enseñás ganás un crédito para aprender de otra persona de la comunidad universitaria. Sin dinero de por medio.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  // `||` y no `??`: un build arg de Docker sin valor llega como texto vacío.
+  url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   locale: "es_AR",
   /** Responsable de la base de datos (nombre y apellido o razón social). */
   dataController: "Orlando Aguilera",
