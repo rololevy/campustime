@@ -1,0 +1,3 @@
+-- Datos de prueba SOLO para desarrollo local (`supabase db reset`).
+-- Los datos de referencia (instituciones, sedes y dominios) viven en las
+-- migraciones porque también los necesita producción.
