@@ -1,6 +1,6 @@
 # Política de seguridad
 
-UniTime guarda datos personales de estudiantes y personal universitario, así que tomamos en serio cualquier reporte.
+CampusTime guarda datos personales de estudiantes y personal universitario, así que tomamos en serio cualquier reporte.
 
 ## Cómo reportar una vulnerabilidad
 

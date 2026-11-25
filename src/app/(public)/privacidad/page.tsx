@@ -89,8 +89,8 @@ export default function PrivacyPage() {
           </ul>
           <p>
             Al anotarte aceptás que tus datos se alojen en servidores fuera de la Argentina, con proveedores que
-            aplican medidas de seguridad técnicas y organizativas. Usamos estos servicios solo para operar
-            UniTime.
+            aplican medidas de seguridad técnicas y organizativas. Usamos estos servicios solo para operar{" "}
+            {siteConfig.name}.
           </p>
         </section>
 
@@ -106,7 +106,7 @@ export default function PrivacyPage() {
           <h2>Cómo los protegemos</h2>
           <p>
             Toda la comunicación viaja cifrada (HTTPS). La lista de espera no es accesible desde el navegador:
-            solo la lee el servidor de UniTime, con acceso restringido.
+            solo la lee el servidor de {siteConfig.name}, con acceso restringido.
           </p>
         </section>
 

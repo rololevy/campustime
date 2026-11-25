@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { siteConfig } from "@/config/site";
+
 import { WaitlistForm } from "./_components/waitlist-form";
 
 const primaryButton =
@@ -37,7 +39,7 @@ function Hero() {
             Enseñá lo que sabés. Aprendé lo que te falta.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-pretty text-muted">
-            UniTime es un banco de tiempo para la comunidad universitaria: cada hora que enseñás se convierte en
+            {siteConfig.name} es un banco de tiempo para la comunidad universitaria: cada hora que enseñás se convierte en
             un crédito para aprender de otra persona. Sin plata de por medio.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -198,7 +200,7 @@ function Principles() {
         ))}
       </div>
       <p className="mt-6 rounded-2xl bg-accent-soft px-5 py-4 text-sm">
-        <strong className="font-semibold">Se enseña, no se hace la tarea por otro.</strong> UniTime es para
+        <strong className="font-semibold">Se enseña, no se hace la tarea por otro.</strong> {siteConfig.name} es para
         explicar y acompañar: pedir TPs o exámenes resueltos va contra las normas y se modera.
       </p>
     </section>
@@ -253,7 +255,7 @@ function Join() {
 const FAQ = [
   {
     question: "¿Cuesta algo?",
-    answer: "No. UniTime es gratis y no hay pagos entre personas: el intercambio es solo con créditos de tiempo.",
+    answer: `No. ${siteConfig.name} es gratis y no hay pagos entre personas: el intercambio es solo con créditos de tiempo.`,
   },
   {
     question: "¿Y si todavía no tengo nada para enseñar?",

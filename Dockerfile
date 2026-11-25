@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 #
-# Imagen portable de UniTime (salida standalone de Next.js). Sirve para migrar a
+# Imagen portable de CampusTime (salida standalone de Next.js). Sirve para migrar a
 # Cloud Run, App Runner, ECS o Azure Container Apps sin tocar el código.
 # Las variables NEXT_PUBLIC_* quedan fijas en el build: pasalas como --build-arg.
 

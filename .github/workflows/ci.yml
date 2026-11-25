@@ -58,4 +58,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - run: docker build --tag unitime:ci .
+      - run: docker build --tag campustime:ci .

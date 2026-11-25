@@ -11,8 +11,8 @@ afterEach(() => {
 
 describe("siteConfig.url", () => {
   it("usa NEXT_PUBLIC_SITE_URL si está definida", async () => {
-    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://unitime.example");
-    expect((await loadSiteConfig()).url).toBe("https://unitime.example");
+    vi.stubEnv("NEXT_PUBLIC_SITE_URL", "https://campustime.example");
+    expect((await loadSiteConfig()).url).toBe("https://campustime.example");
   });
 
   it("vuelve a localhost si la variable llega vacía (build arg de Docker sin valor)", async () => {

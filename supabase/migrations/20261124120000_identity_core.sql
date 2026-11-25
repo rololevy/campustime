@@ -1,5 +1,5 @@
 -- =============================================================================
--- UniTime · Núcleo de identidad institucional
+-- CampusTime · Núcleo de identidad institucional
 --
 -- Instituciones, sedes, dominios de email y perfiles.
 -- Cada institución puede tener varios dominios y cada dominio puede apuntar a

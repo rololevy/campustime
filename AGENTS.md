@@ -8,7 +8,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-## Reglas del proyecto UniTime
+## Reglas del proyecto CampusTime
 
 - Los textos de la UI van en español rioplatense con voseo. El código y los identificadores van en inglés.
 - La lógica de negocio vive en funciones SQL (migraciones en `supabase/migrations`) o en `src/server/*`. Los componentes de cliente nunca escriben en la base.

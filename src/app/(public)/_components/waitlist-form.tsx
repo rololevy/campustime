@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useActionState } from "react";
 
+import { siteConfig } from "@/config/site";
 import {
   MEMBER_ROLES,
   ROLE_LABELS,
@@ -179,7 +180,7 @@ export function WaitlistForm() {
             {...errorProps("consent")}
           />
           <label htmlFor="consent" className="text-sm text-muted">
-            Acepto que UniTime guarde estos datos para avisarme del lanzamiento, según la{" "}
+            Acepto que {siteConfig.name} guarde estos datos para avisarme del lanzamiento, según la{" "}
             <Link href="/privacidad" className="font-medium text-primary underline underline-offset-2">
               política de privacidad
             </Link>
