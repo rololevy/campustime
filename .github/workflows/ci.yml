@@ -17,7 +17,7 @@ jobs:
     name: Lint, tipos, tests y build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v5
         with:
           node-version: 24
@@ -33,7 +33,7 @@ jobs:
     name: Migraciones y tests sobre Supabase real
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v5
         with:
           node-version: 24
@@ -57,5 +57,5 @@ jobs:
     name: Imagen Docker (portabilidad)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - run: docker build --tag campustime:ci .
