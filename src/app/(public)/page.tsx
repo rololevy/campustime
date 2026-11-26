@@ -72,7 +72,7 @@ function SessionPreview() {
           </span>
         </div>
         <p className="mt-4 text-xl font-semibold">Análisis Matemático I</p>
-        <p className="mt-1 text-sm text-muted">Martes 18:00 · 1 hora · Biblioteca de la facultad</p>
+        <p className="mt-1 text-sm text-muted">Martes 18:00 · 1 hora · Videollamada</p>
 
         <ul className="mt-5 space-y-3">
           <PersonRow initials="LG" name="Lucía" role="Enseña" delta="+1 crédito" gain />
@@ -131,12 +131,12 @@ const STEPS = [
     body: "Materias, idiomas, programación, música: lo que puedas enseñar y lo que quieras aprender. Te sugerimos con quién hacer match.",
   },
   {
-    title: "Coordiná el encuentro",
-    body: "Pedí una sesión en los horarios de la otra persona y arreglen los detalles por el chat. En tu sede o por videollamada.",
+    title: "Coordiná la videollamada",
+    body: "Pedí una sesión en los horarios de la otra persona. Cuando la acepta, comparte el link de Meet (o la que prefieran) y arreglan los detalles por el chat.",
   },
   {
     title: "Confirmá y sumá",
-    body: "Cuando termina, ambos confirman y el crédito pasa de una cuenta a la otra. Después se califican.",
+    body: "Al terminar, confirman que la sesión se hizo y recién ahí el crédito pasa de una cuenta a la otra. Después se califican.",
   },
 ];
 
@@ -179,8 +179,8 @@ const PRINCIPLES = [
     body: "Solo participan personas acreditadas con el mail de su universidad. Hay reseñas, reportes y moderación.",
   },
   {
-    title: "Presencial o virtual",
-    body: "Encontrate en tu sede o aprendé por videollamada con gente de otras facultades y universidades del país.",
+    title: "Siempre por videollamada",
+    body: "Aprendé con gente de otras facultades y universidades del país sin moverte, y sin encontrarte en persona con alguien que no conocés.",
   },
 ];
 
@@ -270,7 +270,12 @@ const FAQ = [
   {
     question: "¿Las sesiones son presenciales o virtuales?",
     answer:
-      "Las dos cosas. Presencial dentro de tu sede o en un lugar público, o virtual por la videollamada que prefieran.",
+      "Virtuales, por Meet o la videollamada que prefieran. Así podés aprender con gente de cualquier sede o universidad, y nadie tiene que encontrarse en persona con alguien que no conoce.",
+  },
+  {
+    question: "¿Cuándo recibo el crédito por enseñar?",
+    answer:
+      "Cuando la sesión termina y se confirma que se hizo. Al pedir la sesión, el crédito de quien aprende queda reservado; si confirma, pasa a tu cuenta. Si confirmás vos y la otra persona no objeta en 72 horas, también. Si la sesión no se hace, la reserva vuelve a quien la pidió.",
   },
   {
     question: "¿Cuándo arranca?",
