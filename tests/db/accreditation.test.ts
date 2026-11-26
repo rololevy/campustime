@@ -373,6 +373,15 @@ describe("visibilidad", () => {
       const codes = await failure(tx, () => tx.query("select * from private.affiliation_codes"));
       expect(codes).toMatch(/permission denied/i);
 
+      // create_affiliation acreditaría cualquier email sin código.
+      for (const call of [
+        "select * from private.create_affiliation($1, 'otro@frba.utn.edu.ar')",
+        "select private.hash_code($1, '123456')",
+      ]) {
+        const message = await failure(tx, () => tx.query(call, [ana]));
+        expect(message, call).toMatch(/permission denied/i);
+      }
+
       await switchTo(tx, { role: "anon" });
       const anon = await failure(tx, () => tx.query("select * from public.affiliations"));
       expect(anon).toMatch(/permission denied/i);

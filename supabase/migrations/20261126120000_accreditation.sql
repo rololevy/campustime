@@ -15,7 +15,8 @@
 
 create extension if not exists pgcrypto with schema extensions;
 
-alter default privileges in schema private revoke execute on functions from public;
+-- Postgres otorga EXECUTE a PUBLIC en toda función nueva, y ese permiso global
+-- no se puede quitar por esquema. Cada función de `private` se revoca a mano.
 revoke execute on function private.set_updated_at() from public;
 
 create type public.affiliation_status as enum ('pending_domain', 'active', 'revoked');
@@ -461,6 +462,7 @@ $$;
 -- -----------------------------------------------------------------------------
 
 grant usage on schema private to authenticated;
+revoke all on function private.is_accredited(uuid) from public;
 grant execute on function private.is_accredited(uuid) to authenticated;
 
 revoke all on function private.email_domain_of(text) from public;
