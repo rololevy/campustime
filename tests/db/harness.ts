@@ -119,11 +119,19 @@ export async function errorOf(promise: Promise<unknown>): Promise<string> {
   throw new Error("Se esperaba que la consulta fallara, pero terminó bien.");
 }
 
-/** Crea un usuario en auth.users (como lo haría Supabase Auth) y devuelve su id. */
-export async function createAuthUser(db: TestDb, metadata: Record<string, unknown> = {}): Promise<string> {
+/**
+ * Crea un usuario en auth.users (como lo haría Supabase Auth) y devuelve su id.
+ * Por defecto el email es único, inventado y confirmado.
+ */
+export async function createAuthUser(
+  db: TestDb,
+  metadata: Record<string, unknown> = {},
+  options: { email?: string; confirmed?: boolean } = {},
+): Promise<string> {
   const { rows } = await db.query<{ id: string }>(
-    "insert into auth.users (id, email, raw_user_meta_data) values (gen_random_uuid(), $1, $2::jsonb) returning id",
-    [`${crypto.randomUUID()}@example.test`, JSON.stringify(metadata)],
+    `insert into auth.users (id, email, email_confirmed_at, raw_user_meta_data)
+     values (gen_random_uuid(), $1, case when $2 then now() end, $3::jsonb) returning id`,
+    [options.email ?? `${crypto.randomUUID()}@example.test`, options.confirmed ?? true, JSON.stringify(metadata)],
   );
   return rows[0].id;
 }
