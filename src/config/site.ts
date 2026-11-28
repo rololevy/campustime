@@ -16,7 +16,7 @@ export const siteConfig = {
   /** Responsable de la base de datos (nombre y apellido o razón social). */
   dataController: "Orlando Aguilera",
   /** Email para consultas y para ejercer los derechos de acceso, rectificación y supresión. */
-  contactEmail: "orlando.aguilera@alumnos.frgp.utn.edu.ar",
+  contactEmail: "contacto@campustime.com.ar",
   /** Repositorio público (AGPL-3.0). */
   repositoryUrl: "https://github.com/rololevy/campustime",
   /** Versión vigente de la política de privacidad; se guarda con cada consentimiento. */
